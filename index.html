@@ -3,39 +3,227 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tidy for Gmail</title>
-<link rel="icon" href="icon.png">
-<style>
-  body { font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color: #202124; max-width: 720px; margin: 48px auto; padding: 0 20px; }
-  .brand { display: flex; align-items: center; gap: 12px; color: #1a73e8; font-weight: 700; font-size: 20px; }
-  .brand img { width: 44px; height: 44px; }
-  h1 { font-size: 38px; line-height: 1.15; margin: 22px 0 10px; }
-  .sub { color: #5f6368; font-size: 19px; margin-top: 0; }
-  ul { padding-left: 20px; }
-  .price { display: inline-block; background: #fef7e0; border: 1px solid #fbe3a1; color: #5f4200; font-weight: 600; padding: 8px 14px; border-radius: 10px; }
-  h2 { font-size: 20px; margin-top: 36px; }
-  a { color: #1a73e8; }
-  footer { margin-top: 48px; color: #5f6368; font-size: 14px; border-top: 1px solid #e8eaed; padding-top: 16px; }
-</style>
+<title>Tidy for Gmail — Hide Gmail's AI clutter, keep every feature</title>
+<meta name="description" content="A Chrome extension that hides Gemini, AI Inbox, Help me write, nudges and emoji reactions in Gmail, and opens every view at the top. Free 7-day trial, then $3.99 one-time.">
+<meta property="og:title" content="Tidy for Gmail">
+<meta property="og:description" content="Hide Gmail's AI clutter without losing the features you use. Free 7-day trial, then $3.99 one-time.">
+<meta property="og:image" content="https://tidy.awata-app.com/icon.png">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="brand"><img src="icon.png" alt="">Tidy for Gmail</div>
-  <h1>A calmer Gmail. One switch at a time.</h1>
-  <p class="sub">A Chrome extension that hides the clutter you never asked for and keeps every Gmail feature you use.</p>
-  <ul>
-    <li>Hide the Gemini button, AI Inbox, "Help me write" and "Summarize this email"</li>
-    <li>Every tab, category, label and folder opens at the top of the list</li>
-    <li>Hide nudges and emoji reaction buttons</li>
-    <li>Never reads your email</li>
-  </ul>
-  <p class="price">7 days free · Scrolling fix free forever · $3.99 unlocks all</p>
 
-  <h2>Support</h2>
-  <p>Questions, problems or ideas? Email <a href="mailto:lbell@awata-app.com">lbell@awata-app.com</a>.</p>
-  <p><b>Already paid on another computer?</b> Click the Tidy icon in Chrome, then "Already paid? Log in," and enter the email you used at checkout.</p>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="">Tidy for Gmail</a>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <!-- When the Web Store listing is live, replace href="#pricing" with the listing link -->
+      <a class="btn small" href="#pricing">Get Tidy</a>
+    </nav>
+  </div>
+</header>
 
-  <footer>
-    <a href="privacy">Privacy policy</a> · Tidy for Gmail is not affiliated with or endorsed by Google. Gmail is a trademark of Google LLC.
-  </footer>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Chrome extension for Gmail</span>
+      <h1>A calmer Gmail.<br>One switch at a time.</h1>
+      <p class="lead">Hide the AI buttons and nudges you never asked for, without turning off the Gmail features you actually use.</p>
+      <div class="cta-row">
+        <!-- When the Web Store listing is live, replace href="#pricing" with the listing link -->
+        <a class="btn" href="#pricing">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M21.17 8H12M3.95 6.06 8.54 14M10.88 21.94 15.46 14"/></svg>
+          Add to Chrome — coming soon
+        </a>
+        <a class="btn ghost" href="#features">See what it does</a>
+      </div>
+      <p class="price-note">Free for 7 days · Scrolling fix free forever · $3.99 one-time unlocks everything</p>
+      <div class="trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Never reads your email</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>No subscription</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Works instantly, no reload</span>
+      </div>
+    </div>
+    <div class="shot"><img src="panel.png" alt="The Tidy for Gmail panel with on/off switches for each feature"></div>
+  </div>
+</section>
+
+<section class="problem">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Gmail's off switch takes too much with it</h2>
+      <p>Turning off Gmail's "smart features" to get rid of Gemini also removes things you rely on. Tidy only hides the buttons.</p>
+    </div>
+    <div class="compare">
+      <div class="card bad">
+        <h3>Gmail's "smart features" off switch</h3>
+        <ul>
+          <li>Removes your Primary, Promotions and Social tabs</li>
+          <li>Removes package and travel summary cards</li>
+          <li>Turns off Smart Compose and Smart Reply</li>
+          <li>The Gemini button still shows up</li>
+        </ul>
+      </div>
+      <div class="card good">
+        <h3>Tidy for Gmail</h3>
+        <ul>
+          <li>Keeps your inbox tabs and summary cards</li>
+          <li>Keeps Smart Compose and Smart Reply</li>
+          <li>Hides only the buttons you choose</li>
+          <li>Undo any time with one switch</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Everything Tidy can do</h2>
+      <p>Every feature has its own switch, so you hide exactly what bothers you.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></div>
+        <h3>Gemini button <span class="tag pro">PRO</span></h3>
+        <p>Remove the Gemini star from the top of Gmail.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg></div>
+        <h3>AI Inbox <span class="tag pro">PRO</span></h3>
+        <p>Take "AI Inbox" out of your left sidebar.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div>
+        <h3>Help me write <span class="tag pro">PRO</span></h3>
+        <p>Hide the AI writing button and the "Describe your message" bar in Compose.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h7"/></svg></div>
+        <h3>Summarize this email <span class="tag pro">PRO</span></h3>
+        <p>Hide the AI summary buttons on your emails.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+        <h3>Nudges &amp; emoji <span class="tag pro">PRO</span></h3>
+        <p>Hide "Received 3 days ago. Reply?" reminders and emoji reaction buttons.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></div>
+        <h3>Open views at the top <span class="tag free">FREE</span></h3>
+        <p>Every tab, category, label and folder starts at the top. Back from an email keeps your place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Set up in under a minute</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Add Tidy to Chrome</h3><p>Install from the Chrome Web Store. No account or signup.</p></div>
+      <div class="step"><h3>Open Gmail</h3><p>Everything is switched on for your free 7-day trial.</p></div>
+      <div class="step"><h3>Flip the switches</h3><p>Click the Tidy icon to show or hide anything. Changes apply instantly.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Simple pricing</h2>
+      <p>One payment. No subscription. Future features included.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="amount">$0</div>
+        <p class="sub">Forever</p>
+        <ul>
+          <li>Open every view at the top</li>
+          <li>Keeps your place when you go back</li>
+        </ul>
+      </div>
+      <div class="plan featured">
+        <span class="badge">Best value</span>
+        <h3>Pro</h3>
+        <div class="amount">$3.99 <small>one-time</small></div>
+        <p class="sub">Unlock all features, forever</p>
+        <ul>
+          <li>Everything in Free</li>
+          <li>Hide Gemini, AI Inbox, Help me write &amp; Summarize</li>
+          <li>Hide nudges and emoji reactions</li>
+          <li>Use on all your computers</li>
+          <li>All future features included</li>
+        </ul>
+      </div>
+    </div>
+    <div class="trial-banner">🎉 Try every Pro feature free for 7 days. No card needed.</div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head"><h2>Questions</h2></div>
+    <div class="faq">
+      <details>
+        <summary>Does Tidy read my email?</summary>
+        <p>No. Tidy only changes which buttons Gmail shows in your own browser. It never reads, stores or sends the content of your emails. See the <a href="privacy">privacy policy</a>.</p>
+      </details>
+      <details>
+        <summary>Will I lose any Gmail features?</summary>
+        <p>No. Tidy hides buttons; it doesn't turn anything off. Your inbox tabs, package cards, Smart Compose and everything else keep working.</p>
+      </details>
+      <details>
+        <summary>What happens after the 7-day trial?</summary>
+        <p>The scrolling fix stays free forever. The other switches lock until you unlock them with a one-time $3.99 payment. Your settings are saved, so everything comes back the way you had it.</p>
+      </details>
+      <details>
+        <summary>I paid on another computer. How do I unlock it here?</summary>
+        <p>Click the Tidy icon in Chrome, choose "Already paid? Log in," and enter the email you used at checkout. You'll get a login link — no second payment.</p>
+      </details>
+      <details>
+        <summary>How are payments handled?</summary>
+        <p>Securely by Stripe through ExtensionPay. We never see your card number.</p>
+      </details>
+      <details>
+        <summary>Does it work in other languages or browsers?</summary>
+        <p>Tidy works in Google Chrome (and Chrome-based browsers like Edge) with Gmail set to English.</p>
+      </details>
+      <details>
+        <summary>Something isn't hidden or doesn't work.</summary>
+        <p>Gmail changes its layout from time to time. Email <a href="mailto:lbell@awata-app.com">lbell@awata-app.com</a> and we'll fix it in the next update — updates install automatically.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="box">
+      <h2>Give your inbox some breathing room</h2>
+      <p>Free for 7 days. $3.99 once if you love it.</p>
+      <!-- When the Web Store listing is live, replace href="#pricing" with the listing link -->
+      <a class="btn" href="#pricing">Add to Chrome — coming soon</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Tidy for Gmail · Not affiliated with or endorsed by Google. Gmail is a trademark of Google LLC.</div>
+    <div class="links">
+      <a href="privacy">Privacy</a>
+      <a href="mailto:lbell@awata-app.com">Support</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
